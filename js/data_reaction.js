@@ -1,16 +1,13 @@
 data_reaction = [
     {
-        title: "Opportunity attack",
+        title: "Opportunity Attack",
         optional: "Standard rule",
-        icon: "crossed-swords",
+        icon: "sword-slice",
         subtitle: "Enemy leaves your reach",
         description: "You can rarely move heedlessly past your foes without putting yourself in danger",
-        reference: "PHB, pg. 195.",
+        reference: "PHB'24, page 371",
         bullets: [
-            "Trigger: An enemy creature you can see leaves your reach.",
-            "Make one melee attack against the provoking creature.",
-            "The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
-            "Creatures don't provoke an opportunity attack when they teleport or when someone or something moves them without using their movement, action, or reaction."
+            "You can make an Opportunity Attack when a creature that you can see leaves your reach using its action, its Bonus Action, its Reaction, or one of its speeds. To make the Opportunity Attack, take a Reaction to make one melee attack with a weapon or an Unarmed Strike against the provoking creature. The attack occurs right before the creature leaves your reach."
         ]
     },
     {
@@ -19,7 +16,7 @@ data_reaction = [
         icon: "stopwatch",
         subtitle: "Part of your Ready action",
         description: "Execute the reaction specified by your Ready action",
-        reference: "PHB, pg. 193.",
+        reference: "PHB'24, page 372",
         bullets: [
             "Trigger: As specified by your <i>Ready</i> action."
         ]
@@ -37,17 +34,16 @@ data_reaction = [
         ]
     },
     {
-        title: "Grapple **",
-        optional: "Homebrew rule",
-        icon: "grab",
-        subtitle: "Special melee attack",
-        description: "Attempt to grab a creature or wrestle with it",
-        reference: "PHB, pg. 195.",
+        title: "Identify a Spell*",
+        optional: "Optional rule",
+        icon: "crystal-eye",
+        subtitle: "Identify as a Reaction",
+        description: "Arcana check to identify",
+        reference: "XGE, page 85.",
         bullets: [
-            "You can use the <i>Reaction</i> action to make a special opportunity attack, a grapple. If you're able to make multiple attacks with the Opportunity Attack action, this attack replaces all of them.",
-            "The target of your grapple must be no more than one size larger than you, and it must be within your reach.",
-            "Using at least one free hand, you try to seize the target by making a grapple check, a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you succeed, you subject the target to the grappled condition (its speed is set to 0)."
+            "Sometimes a character wants to identify a spell that someone else is casting or that was already cast. To do so, a character can use their reaction to identify a spell as it's being cast, or they can use an action on their turn to identify a spell by its effect after it is cast.",
+            "If the character perceived the casting, the spell's effect, or both, the character can make an Intelligence (Arcana) check with the reaction or action. The DC equals 15 + the spell's level. If the spell is cast as a class spell and the character is a member of that class, the check is made with advantage. For example, if the spellcaster casts a spell as a cleric, another cleric has advantage on the check to identify the spell. Some spells aren't associated with any class when they're cast, such as when a monster uses its Innate Spellcasting trait.",
+            "This Intelligence (Arcana) check represents the fact that identifying a spell requires a quick mind and familiarity with the theory and practice of casting. This is true even for a character whose spellcasting ability is Wisdom or Charisma. Being able to cast spells doesn't by itself make you adept at deducing exactly what others are doing when they cast their spells."
         ]
-    },    
+    }
 ]

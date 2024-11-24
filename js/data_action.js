@@ -5,151 +5,113 @@ data_action = [
         icon: "crossed-swords",
         subtitle: "Melee or ranged attack",
         description: "Perform a melee or ranged attack with your weapon",
-        reference: "PHB, pgs. 192,194-195.",
+        reference: "PHB'24, page 361.",
         bullets: [
-            "Certain features, such as the <i>Extra Attack</i> feature of the fighter, allow you to make more than one attack with this action. Each of these attacks is a separate roll and may target different creatures. You may move in between these attacks.",
-            "When you attack with a light melee weapon, you can use a bonus action to attack with your other hand (see the <i>Offhand attack</i> bonus action).",
-            "You may replace one of your melee attacks with a <i>Grapple</i> or a <i>Shove</i>.",
-            "Some conditions give advantage on the attack: attacks against blinded, paralyzed, petrified, restrained, stunned, or unconscious targets; melee attacks against prone targets; attacks by invisible or hidden attackers.",
-            "Some conditions give disadvantage on the attack: attacks against invisible or hidden targets; ranged attacks against prone targets; attacks by blinded, frightened, poisoned, or restrained attackers."
+            "When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike.",
+            "<b>Equipping and Unequipping Weapons.</b></br> You can either equip or unequip one weapon when you make an attack as part of this action. You do so either before or after the attack. <br> If you equip a weapon before an attack, you don't need to use it for that attack. Equipping a weapon includes drawing it from a sheath or picking it up. Unequipping a weapon includes sheathing, stowing, or dropping it.",
+            "<b>Moving Between Attacks.</b></br> If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks."
+        ]
+    },
+    {
+        title: "Unarmed Strike",
+        optional: "Standard rule",
+        icon: "punch",
+        subtitle: "Attack with no weapon",
+        description: "A punch, kick, head-butt, or similar forceful blow",
+        reference: "PHB'24, page 377.",
+        bullets: [
+            "Whenever you use your Unarmed Strike, choose one of the following options for its effect.",
+            "<b>Damage.</b></br> You make an attack roll against the target.</br> Your bonus to the roll equals your Strength Mod + Prof Bonus.</br> On a hit, the target takes Bludgeoning damage equal to 1 + Strength Mod."
         ]
     },
     {
         title: "Grapple",
         optional: "Standard rule",
         icon: "grab",
-        subtitle: "Special melee attack",
+        subtitle: "Unarmed Strike Option",
         description: "Attempt to grab a creature or wrestle with it",
-        reference: "PHB, pg. 195.",
+        reference: "PHB'24, page 377.",
         bullets: [
-            "You can use the <i>Attack</i> action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
-            "The target of your grapple must be no more than one size larger than you, and it must be within your reach.",
-            "Using at least one free hand, you try to seize the target by making a grapple check, a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you succeed, you subject the target to the grappled condition (its speed is set to 0)."
+            "Whenever you use your Unarmed Strike, choose one of the following options for its effect.",
+            "<b>Grapple.</b></br> The target must succeed on a Strength or Dexterity saving throw (it chooses which), or it has the <i>Grappled</i> condition. The DC for the saving throw and any escape attempts equals 8 + Strength Mod + Prof Bonus.",
+            "This grapple is possible only if the target is no more than one size larger than you and if you have a hand free to grab it."
         ]
     },
     {
         title: "Shove",
         optional: "Standard rule",
         icon: "hand",
-        subtitle: "Special melee attack",
+        subtitle: "Unarmed Strike Option",
         description: "Shove a creature, either to knock it prone or push it away from you",
-        reference: "PHB, pg. 195. / DMG, page 272",
+        reference: "PHB'24, page 377.",
         bullets: [
-            "Using the <i>Attack</i> action, you can make a special melee attack to shove a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
-            "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
-            "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you win the contest, you either knock the target prone or push it 5 feet away from you.",
+            "Whenever you use your Unarmed Strike, choose one of the following options for its effect.",
+            "<b>Shove.</b></br> The target must succeed on a Strength or Dexterity saving throw (it chooses which), or you either push it 5ft away or cause it to have the <i>Prone</i> condition. The DC for the saving throw and any escape attempts equals 8 + Strength Mod + Prof Bonus.",
+            "This shove is possible only if the target is no more than one size larger than you.",
+            "</br>",
+            "<b><i>Optional.</i> Shove Aside.</b></br> The target must succeed on a Strength or Dexterity saving throw (it chooses which), or you push it 5ft to a different space within its reach. The DC for the saving throw and any escape attempts equals 8 + Strength Mod + Prof Bonus. </br> The target has advantage on this save.",
+            "This shove is possible only if the target is no more than one size larger than you."
         ]
     },
     {
-        title: "Shove Aside*",
-        optional: "Optional rule",
-        icon: "hand",
-        subtitle: "Special melee attack",
-        description: "Shove a creature, either to knock it prone or push it aside from you",
-        reference: "PHB, pg. 195. / DMG, page 272",
-        bullets: [
-            "(Optional Rule):",
-            "With this option, a creature uses the special shove attack to force a target to the side.",
-            "The attacker has disadvantage on its Strength (Athletics) check when it does so.",
-            "If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
-        ]
-    },
-    {
-        title: "Cast a spell",
+        title: "Magic",
         optional: "Standard rule",
         icon: "magic-swirl",
-        subtitle: "Cast time of 1 action",
-        description: "Cast a spell with a casting time of 1 action",
-        reference: "PHB, pg. 192.",
+        subtitle: "Cast time of an action",
+        description: "Cast a spell that has a casting time of an action or use a feature or magic item that requires a Magic action to be activated.",
+        reference: "PHB'24, page 236, page 371.",
         bullets: [
-            "You can't cast a spell with you action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
-            "The target of a spell must be within the spell's range. To target something, you must have a clear path to it, so it can't be behind total cover.",
-            "Spells with material components do not consume the material unless explicitly stated. Unless the cost of a material is given, you can assume that the cost is negligible and the material is simply available in a component pouch.",
-            "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends. You lose concentration on a spell if you cast another spell that requires concentration or when you are incapacitated. Each time you take damage, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher."
+            "<b>One Spell With A Spell Slot Per Turn.</b></br> On a turn, you can expend only one spell slot to cast a spell. This rule means you can't, for example, cast a spell with a spell slot using the Magic action and another one using a Bonus Action on the same turn.",
+            "<b>A Clear Path To The Target.</b></br> To target something with a spell, a caster must have a clear path to it, so it can't be behind Total Cover.",
+            "<b>Longer Casting Times.</b></br> If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain Concentration while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot.",
         ]
     },
     {
         title: "Dash",
         optional: "Standard rule",
         icon: "sprint",
-        subtitle: "Double movement speed",
+        subtitle: "Additional movement speed",
         description: "Gain extra movement for the current turn",
-        reference: "PHB, pg. 192.",
+        reference: "PHB'24, page 365",
         bullets: [
-            "The increase equals your speed, after applying any modifiers."
+            "The increase equals your Speed after applying any modifiers.",
+            "If you have a special speed, such as a Fly Speed or Swim Speed, you can use that speed instead of your Speed when you take this action. You choose which speed to use each time you take it."
         ]
     },
     {
         title: "Disengage",
         optional: "Standard rule",
-        icon: "journey",
+        icon: "run",
         subtitle: "Prevent opportunity attacks",
-        description: "Your movement doesn't provoke opportunity attacks for the rest of the turn",
-        reference: "PHB, pg. 192.",
+        description: "Your movement doesn't provoke Opportunity Attacks for the rest of the turn",
+        reference: "PHB'24, page 366",
         bullets: [
+            "Your movement doesn't provoke Opportunity Attacks for the rest of the turn"
         ]
     },
     {
         title: "Dodge",
         optional: "Standard rule",
-        icon: "aura",
-        subtitle: "Increase defenses",
+        icon: "dodging",
+        subtitle: "Avoid incoming attacks",
         description: "Focus entirely on avoiding attacks",
-        reference: "PHB, pg. 192.",
+        reference: "PHB'24, page 366",
         bullets: [
-            "Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage.",
-            "You lose this benefit if you are <i>incapacitated</i> or if your speed drops to 0."
-        ]
-    },
-    {
-        title: "Escape",
-        optional: "Standard rule",
-        icon: "manacles",
-        subtitle: "Escape a grapple",
-        description: "Escape a grapple",
-        reference: "PHB, pg. 195.",
-        bullets: [
-            "To escape a grapple, you must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by the grappler's Strength (Athletics) check.",
-            "Escaping other conditions that restrain you (such as manacles) may require a Dexterity or Strength check, as specified by the condition."
+            "Until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity saving throws with Advantage.",
+            "You lose this benefit if you have the <i>Incapacitated</i> condition or if your Speed is 0."
         ]
     },
     {
         title: "Help",
         optional: "Standard rule",
-        icon: "telepathy",
+        icon: "team-idea",
         subtitle: "Grant an ally advantage",
-        description: "Grant an ally advantage on an ability check or attack",
-        reference: "PHB, pg. 192.",
+        description: "Grant an ally advantage on an Ability Check or Attack Roll",
+        reference: "PHB'24, page 368",
         bullets: [
-            "The target gains advantage on the next ability check it makes to perform the task you are helping with.",
-            "Alternatively, the target gains advantage on the next attack roll against against a creature within 5 feet of you.",
-            "The advantage lasts until the start of your next turn."
-        ]
-    },
-    {
-        title: "Use Object",
-        optional: "Standard rule",
-        icon: "snatch",
-        subtitle: "Interact, use special abilities",
-        description: "Interact with a second object or use special object abilities",
-        reference: "PHB, pg. 193.",
-        bullets: [
-            "You can interact with one object for free during your turn (such as drawing a weapon or opening a door). If you want to interact with a second object, use this action.",
-            "When an object requires your action for its use, you also take this action."
-        ]
-    },
-    {
-        title: "Use shield",
-        optional: "Standard rule",
-        icon: "round-shield",
-        subtitle: "Equip or unequip a shield",
-        description: "Equip or unequip a shield",
-        reference: "PHB, pgs. 144-146.",
-        bullets: [
-            "A shield always takes an action to equip or unequip.",
-            "Armor takes several minutes to equip or unequip."
+            "When you take the Help action, you do one of the following:",
+            "<b>Assist an Ability Check.</b></br> Choose one of your skill or tool proficiencies and one ally who is near enough for you to assist verbally or physically when they make an ability check. That ally has Advantage on the next ability check they make with the chosen skill or tool. This benefit expires if the ally doesn't use it before the start of your next turn. </br>The DM has final say on whether your assistance is possible.",
+            "<b>Assist an Attack Roll.</b></br> You momentarily distract an enemy within 5ft of you, giving Advantage to the next attack roll by one of your allies against that enemy. This benefit expires at the start of your next turn."
         ]
     },
     {
@@ -158,24 +120,61 @@ data_action = [
         icon: "hood",
         subtitle: "Attempt to hide",
         description: "Attempt to hide",
-        reference: "PHB, pg. 192.",
+        reference: "PHB'24, page 368",
         bullets: [
-            "You can't hide from a creature that can see you. You must have total cover, be in a heavily obscured area, be invisible, or otherwise block the enemy's vision.",
-            "If you make noise (such as shouting a warning or knocking over a vase), you give away your position.",
-            "When you try to hide, make a Dexterity (Stealth) check and note the result. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.",
-            "A creature notices you even if it isn't searching unless your Stealth check is higher than its Passive Perception.",
-            "Out of combat, you may also use a Dexterity (Stealth) check for acts like concealing yourself from enemies, slinking past guards, slipping away without being noticed, or sneaking up on someone without being seen or heard."
+            "With the Hide action, you try to conceal yourself. To do so, you must succeed on a DC 15 Dexterity (Stealth) check while you're Heavily Obscured or behind Three-Quarters Cover or Total Cover, and you must be out of any enemy's line of sight; if you can see a creature, you can discern whether it can see you.",
+            "On a successful check, you have the <i>Invisible</i> condition. Make note of your check's total, which is the DC for a creature to find you with a Wisdom (Perception) check.",
+            "The condition ends on you immediately after any of the following occurs: you make a sound louder than a whisper, an enemy finds you, you make an attack roll, or you cast a spell with a Verbal component."
+        ]
+    },
+    {
+        title: "Utilize",
+        optional: "Standard rule",
+        icon: "usable",
+        subtitle: "Interact with item or object",
+        description: "Use a nonmagical item or interact with an object seperate from the free interaction",
+        reference: "PHB'24, page 378",
+        bullets: [
+            "You normally interact with an object while doing something else, such as when you draw a sword as part of the Attack action. When an object requires an action for its use, you take the Utilize action.",
+            "<b>Time-Limited Object Interactions.</b></br> When time is short, such as in combat, interactions with objects are limited: one free interaction per turn. That interaction must occur during a creature's movement or action. Any additional interactions require the Utilize action.",
+            "<b>Breaking Objects.</b></br> As an action, you can automatically break or otherwise destroy a fragile, nonmagical object, such as a glass container or a piece of paper. If you try to damage something more resilient, the DM might use the rules on breaking objects in the rules glossary."
         ]
     },
     {
         title: "Search",
         optional: "Standard rule",
-        icon: "magnifying-glass",
-        subtitle: "Attempt to find something",
-        description: "Devote your attention to finding something",
-        reference: "PHB, pg. 193.",
+        icon: "look-at",
+        subtitle: "Try to look for something",
+        description: "Spend your searching.",
+        reference: "PHB'24, page 373",
         bullets: [
-            "Depending on the nature of your search, the DM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check."
+            "When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.",
+            "<table><tr><th style='text-align:left'>Skill</th><th></th><th></th><th style='text-align:left'>Thing to Detect</th></tr><tr><td><u>Insight</u></td><td></td><td></td><td>Creature's state of mind.</td></tr><tr><td><u>Medicine</u></td><td></td><td></td><td>Creature's ailment or cause of death.</td></tr><tr><td><u>Perception</u></td><td></td><td></td><td>Concealed creature or object.</td></tr><tr><td><u>Survival</u></td><td></td><td></td><td>Tracks or food.</td></tr></table>"
+        ]
+    },
+    {
+        title: "Study",
+        optional: "Standard rule",
+        icon: "magnifying-glass",
+        subtitle: "Attempt to learn something",
+        description: "Spend your time learning information",
+        reference: "PHB'24, page 375",
+        bullets: [
+            "When you take the Study action, you make an Intelligence check to study your memory, a book, a clue, or another source of knowledge and call to mind an important piece of information about it. </br></br> The Areas of Knowledge table suggests which skills are applicable to various areas of knowledge.",
+            "<table><tr><th style='text-align:left'>Skill</th><th></th><th></th><th style='text-align:left'>Areas</th></tr><tr><td><u>Arcana</u></td><td></td><td></td><td>Spells, magic items, eldritch symbols, magical traditions, planes of existence, and certain creatures (Aberrations, Constructs, Elementals, Fey, and Monstrosities)</td></tr><tr><td><u>History</u></td><td></td><td></td><td>Historic events and people, ancient civilizations, wars, and certain creatures (Giants and Humanoids)</td></tr><tr><td><u>Investigation</u></td><td></td><td></td><td>Traps, ciphers, riddles, and gadgetry</td></tr><tr><td><u>Nature</u></td><td></td><td></td><td>Terrain, flora, weather, and certain creatures (Beasts, Dragons, Oozes, and Plants)</td></tr><tr><td><u>Religion</u></td><td></td><td></td><td>Deities, religious hierarchies and rites, holy symbols, cults, and certain creatures (Celestials, Fiends, and Undead)</td></tr></table>"
+        ]
+    },
+    {
+        title: "Influence",
+        optional: "Standard rule",
+        icon: "conversation",
+        subtitle: "Attempt to convince someone",
+        description: "Spend your time communicating",
+        reference: "PHB'24, page 369",
+        bullets: [
+            "With the Influence action, you urge a creature to do something. Describe or roleplay how you're communicating with the creature. Are you trying to deceive, intimidate, amuse, or gently persuade? The DM then determines whether the creature feels willing, unwilling, or hesitant due to your interaction; this determination establishes whether an ability check is necessary, as explained below.",
+            "<b>Willing.</b> If your urging aligns with the creature's desires, no ability check is necessary; the creature fulfills your request in a way it prefers. </br></br> <b>Unwilling.</b> If your urging is repugnant to the creature or counter to its alignment, no ability check is necessary; it doesn't comply. </br></br> <b>Hesitant.</b> If you urge the creature to do something that it is hesitant to do, you must make an ability check, which is affected by the creature's attitude: Indifferent, Friendly, or Hostile. </br></br> The Influence Checks table suggests which ability check to make based on how you're interacting with the creature. The GM chooses the check, which has a default DC equal to 15 or the creature's Int score, whichever is higher. On a successful check, the creature does as urged. On a failed check, you must wait 24 hours (or a duration set by the DM) before urging it in the same way again.",
+            "<table><tr><th style='text-align:left'>Ability Check</th><th></th><th></th><th style='text-align:left'>Interaction</th></tr><tr><td><u>Charisma (Deception)</u></td><td></td><td></td><td>	Deceiving a creature that understands you.</td></tr><tr><td><u>Charisma (Intimidation)</u></td><td></td><td></td><td>Intimidating a creature.</td></tr><tr><td><u>Charisma (Performance)</u></td><td></td><td></td><td>Amusing a monster.</td></tr><tr><td><u>Charisma (Persuasion)</u></td><td></td><td></td><td>Persuading a creature that understands you.</td></tr><tr><td><u>Wisdom (Animal Handling)</u></td><td></td><td></td><td>Gently coaxing a Beast or Monstrosity.</td></tr></table>"
         ]
     },
     {
@@ -184,12 +183,12 @@ data_action = [
         icon: "stopwatch",
         subtitle: "Choose trigger and action",
         description: "Choose a trigger and a response reaction",
-        reference: "PHB, pg. 193.",
+        reference: "PHB'24, page 372",
         bullets: [
-            "First, you decide what perceivable circumstance will trigger your reaction.",
-            "Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it.",
-            "When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger.",
-            "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration"
+            "You take the Ready action to wait for a particular circumstance before you act. To do so, you take this action on your turn, which lets you act by taking a Reaction before the start of your next turn.",
+            "First, you decide what perceivable circumstance will trigger your Reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your Speed in response to it.",
+            "When the trigger occurs, you can either take your Reaction right <b>after</b> the trigger finishes or ignore the trigger.",
+            "When you Ready a spell, you cast it as normal (expending any resources used to cast it) but hold its energy, which you release with your Reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding on to the spell's magic requires Concentration, which you can maintain up to the start of your next turn. If your Concentration is broken, the spell dissipates without taking effect."
         ]
     },
     {
@@ -204,27 +203,14 @@ data_action = [
         ]
     },
     {
-        title: "Stabilize a creature",
-        optional: "Standard rule",
-        icon: "first-aid",
-        subtitle: "Aid a dying creature",
-        description: "Stop a dying creature from needing to make death saving throws",
-        reference: "PHB, pg. 197.",
-        bullets: [
-            "Make a Wisdom (Medicine) check with DC 10",
-            "On a success, the creature is stable and no longer needs to make death saving throws",
-            "A stable creature regains 1 hit point after 1d4 hours"
-        ]
-    },
-    {
         title: "Improvise",
         optional: "Standard rule",
         icon: "juggler",
         subtitle: "Any action not on this list",
         description: "Perform any action you can imagine",
-        reference: "PHB, pg. 193.",
+        reference: "PHB'24, page 15",
         bullets: [
-            "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
+            "Player characters and creatures can also do things not covered by other actions. Many class features and other abilities provide additional action options, and you can improvise other actions. When you describe an action not detailed elsewhere in the rules, the Dungeon Master tells you whether that action is possible and what kind of D20 Test you need to make, if any."
         ]
     },
     {

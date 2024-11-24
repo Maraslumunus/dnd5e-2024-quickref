@@ -1,37 +1,37 @@
 data_bonusaction = [
     {
-        title: "Offhand Attack",
+        title: "Two-Weapon Fighting",
         optional: "Standard rule",
         icon: "crossed-swords",
         subtitle: "Use with the Attack action",
         description: "Attack with your off hand",
-        reference: "PHB, pgs. 192,194-195.",
+        reference: "PHB'24, page 213",
         bullets: [
-            "Only usable if you take the <i>Attack</i> action and attack with a light melee weapon that you're holding in one hand.",
-            "Perform a single attack with a different light melee weapon that you're holding in the other hand.",
-            "You don't add your ability modifier to the damage of the bonus attack unless that modifier is negative.",
-            "If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it."
+            "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn.",
+            "That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative.",
+            "The <b>Nick</b> weapon mastery makes this attack as part of the Attack action instead."
         ]
     },
     {
-        title: "Cast a spell",
+        title: "Magic",
         optional: "Standard rule",
         icon: "magic-swirl",
-        subtitle: "Cast time of 1 bonus action",
-        description: "Cast a spell with a casting time of 1 bonus action",
-        reference: "PHB, pg. 192.",
+        subtitle: "Cast time of a bonus action",
+        description: "Cast a spell that has a casting time of a bonus action or use a feature or magic item that requires a Magic bonus action to be activated.",
+        reference: "PHB'24, page 236, page 371.",
         bullets: [
-            "You can't cast a spell with your action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
-            "For further details, see the <i>Cast a spell</i> action."
+            "<b>One Spell With A Spell Slot Per Turn.</b></br> On a turn, you can expend only one spell slot to cast a spell. This rule means you can't, for example, cast a spell with a spell slot using the Magic action and another one using a Bonus Action on the same turn.",
+            "<b>A Clear Path To The Target.</b></br> To target something with a spell, a caster must have a clear path to it, so it can't be behind Total Cover.",
+            "<b>Longer Casting Times.</b></br> If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain Concentration while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot.",
         ]
     },
     {
         title: "Use class feature",
         optional: "Standard rule",
         icon: "embrassed-energy",
-        subtitle: "Some features use bonus actions",
-        description: "Use a racial or class feature that uses a bonus action",
-        reference: "See class page for more information.",
+        subtitle: "Several class options use bonus actions",
+        description: "Use a species or class feature that uses a bonus action",
+        reference: "See your class page for more information.",
         bullets: [
 
         ]
@@ -62,17 +62,5 @@ data_bonusaction = [
             "As a bonus action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
             "If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
         ]
-    },
-    {
-        title: "Drink a potion **",
-        optional: "Homebrew rule",
-        icon: "potion-ball",
-        subtitle: "Roll for the effect",
-        description: "Roll the dice as per the description of the potion",
-        bullets: [
-            "(Optional Rule):",
-            "Normally Drinking potion counts as an <i>Action</i> and will heal by maximum amount.",
-            "When using it as <i>Bonus action</i>, roll the dice as per the description of the potion."
-        ],
-    },
+    }
 ]

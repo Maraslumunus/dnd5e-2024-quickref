@@ -109,6 +109,7 @@ function fill_section(data, parentname, type) {
 function init() {
     fill_section(data_movement, "basic-movement", "Move");
     fill_section(data_action, "basic-actions", "Action");
+    fill_section(data_conditionalaction, "basic-conditional-actions", "Conditial Action");
     fill_section(data_bonusaction, "basic-bonus-actions", "Bonus action");
     fill_section(data_reaction, "basic-reactions", "Reaction");
     fill_section(data_condition, "basic-conditions", "Condition");
@@ -191,7 +192,9 @@ document.addEventListener("DOMContentLoaded", function () {
     homebrewToggleItem.addEventListener('click', handleToggleClick(homebrewCheckbox));
     darkModeToggleItem.addEventListener('click', handleToggleClick(darkModeCheckbox));
 
-    // Ensure dark mode is off by default
-    darkModeCheckbox.checked = false;
+    // Ensure dark  and optional mode is on by default
+    darkModeCheckbox.checked = true;
+    optionalCheckbox.checked = true;
     handleDarkModeToggle();
+    handleRulesToggle();
 });

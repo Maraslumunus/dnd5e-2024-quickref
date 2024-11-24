@@ -47,6 +47,12 @@
                         environment for free.
                     </div>
                     <div class="section-row" id="basic-actions"></div>
+                    </br>
+                    <i>Conditional Actions</i>
+                    <br />
+                    <div class="section-content">
+                        <div class="section-row" id="basic-conditional-actions"></div>
+                    </div>
                 </div>
             </div>
 
@@ -126,30 +132,36 @@
                         You can change below toggle for settings on this page.
                     </div>
                     <div class="item itemsize" title="Include Optional Rules">
-                        <div class="item-icon"><label class="switch">
+                        <div class="item-icon">
+                            <label class="switch">
                                 <input type="checkbox" id="optional-switch">
                                 <span class="slider round"></span>
-                            </label></div>
+                            </label>
+                        </div>
                         <div class="item-text-container text" id="optional-toggle-item">
                             <div class="item-title">Include Optional Rules (*)</div>
-                            <div class="item-desc">Show/hide optional rules from DMG.</div>
+                            <div class="item-desc">Show/hide optional rules from 2014 DMG.</div>
                         </div>
                     </div>
                     <div class="item itemsize" title="Include Homebre Rules">
-                        <div class="item-icon"><label class="switch">
+                        <div class="item-icon">
+                            <label class="switch">
                                 <input type="checkbox" id="homebrew-switch">
                                 <span class="slider round"></span>
-                            </label></div>
+                            </label>
+                        </div>
                         <div class="item-text-container text" id="homebrew-toggle-item">
                             <div class="item-title">Include Homebrew Rules (**)</div>
                             <div class="item-desc">Show/hide most common Homebrew rules.</div>
                         </div>
                     </div>
                     <div class="item itemsize" title="Darkmode" hidden>
-                        <div class="item-icon"><label class="switch">
+                        <div class="item-icon">
+                            <label class="switch">
                                 <input type="checkbox" id="darkmode-switch">
                                 <span class="slider round"></span>
-                            </label></div>
+                            </label>
+                        </div>
                         <div class="item-text-container text" id="darkmode-toggle-item">
                             <div class="item-title">Darkmode</div>
                             <div class="item-desc">Enable Darkmode</div>
@@ -188,6 +200,7 @@
     <!-- Data -->
     <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_conditionalaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
@@ -195,20 +208,20 @@
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var cookieNotice = document.getElementById('cookie-notice');
-            var acceptButton = document.getElementById('accept-cookies');
-        
-            // Check if user has already accepted cookies
-            if (!localStorage.getItem('cookiesAccepted')) {
-                cookieNotice.style.display = 'block';
-            }
-        
-            acceptButton.addEventListener('click', function() {
-                localStorage.setItem('cookiesAccepted', 'true');
-                cookieNotice.style.display = 'none';
-            });
+        var cookieNotice = document.getElementById('cookie-notice');
+        var acceptButton = document.getElementById('accept-cookies');
+
+        // Check if user has already accepted cookies
+        if (!localStorage.getItem('cookiesAccepted')) {
+        cookieNotice.style.display = 'block';
+        }
+
+        acceptButton.addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieNotice.style.display = 'none';
         });
-        </script>
+        });
+    </script>
 
 </body>
 
